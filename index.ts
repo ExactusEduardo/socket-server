@@ -3,7 +3,7 @@ import router from './routes/router'
 import bodyParser from 'body-parser';
 import cors from 'cors';
 
-const server = new Server();
+const server = Server.instance;
 
 // BodyParser - lo que recibo en el request tomalo y conviertelo en un objeto javascript
 server.app.use( bodyParser.urlencoded({ extended: true }) );
